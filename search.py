@@ -104,8 +104,8 @@ def tree_search(problem, fringe):
         if problem.goal_test(node.state):
             print contadorTree
             return node
-        #print node
         fringe.extend(node.expand(problem))
+        #print node
         contadorTree += 1
     return None
 
@@ -137,10 +137,10 @@ def graph_search(problem, fringe):
         if problem.goal_test(node.state):
             print contadorGraph
             return node
-        #print node
         if node.state not in closed:
             closed[node.state] = True
             fringe.extend(node.expand(problem))
+            #print node
             contadorGraph += 1
     return None
 
