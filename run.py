@@ -2,7 +2,7 @@
 
 import search
 
-ab = search.GPSProblem('A', 'O', search.romania)
+ab = search.GPSProblem('A', 'B', search.romania)
 
 print "Anchura:"
 print "Nodos expandidos:"
